@@ -15,7 +15,7 @@ You get the idea. We saw all of this and realized something: it's all bullshit! 
 ##How Does it Work?##
 _The Bullshit Performance Standard_ uses a very advanced method of calculating performance for your machine. All current impementations of the BSPS use identical methods for their performance calculation, they simply use different languages.
 
-1. When the program begins, a new file is created ("bs.txt")
+1. When the program begins, a new file is created ("bull.shit")
 2. The program writes 50,000,000 copies of the string "bullshit" to this file
 3. The time that this operation takes is printed to the console
 4. The file is deleted
@@ -26,11 +26,8 @@ The BSPS consists of the time that is given to the user at the end of the benchm
 To get this fantastic benchmarking suite onto your machine and start testing, follow these steps: 
 
 1. Clone the repo: `git clone https://github.com/natemara/bullshit-performance-std.git` 
-2. If you wish to use BS(c) _the C implimentation of BSPI_ you need to compile the C file. From the root of the repo, run 
-
-```
-cd BS(c)
-gcc bs.c
-```
-3. Run the BSPI
-4. Brag about your score on the internet!
+2. Run the BSPI
+	a. `cd bin`
+	b. `bs`
+	c. Your score will be written to the console in milliseconds of time
+3. Brag about your score on the internet!
