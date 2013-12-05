@@ -7,6 +7,7 @@ import os
 count = 0
 max = 50000000
 version = "0.1-alpha"
+percent = 0
 
 print("Bullshit Performance Standard Benchmarking Utility")
 print("Version " + version)
@@ -18,7 +19,8 @@ f = open("bs", "w")
 while count <= max:
     f.write("bullshit")
     if (count % 5000001 == 5000000):
-        print(".")
+        percent += 10
+        print(percent + "%")
     count += 1
 
 final_time = time.time() - start_time
