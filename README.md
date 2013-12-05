@@ -27,6 +27,7 @@ To get this fantastic benchmarking suite onto your machine and start testing, fo
 
 1. Clone the repo: `git clone https://github.com/natemara/bullshit-performance-std.git` 
 2. Run the BSPI
-	1. `cd src`
+	1. `cd bullshit-performance-std`
+	2. `cd src`
 	2. `python bs.py`
 3. Brag about your score on the internet!
