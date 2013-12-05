@@ -20,7 +20,7 @@ _The Bullshit Performance Standard_ uses a very advanced method of calculating p
 3. The time that this operation takes is printed to the console
 4. The file is deleted
 
-The BSPI consists of the time that is given to the user at the end of the benchmark's execution is your machine's BSPI score, or BSPIS. So what are you waiting for?
+The BSPS consists of the time that is given to the user at the end of the benchmark's execution is your machine's BSPS score, or BSPSS. So what are you waiting for?
 
 ##How to use?##
 To get this fantastic benchmarking suite onto your machine and start testing, follow these steps: 
