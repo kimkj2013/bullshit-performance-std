@@ -7,8 +7,8 @@ import os
 count = 0
 version = "0.1-alpha"
 
-print "Bullshit Performance Standard Benchmarking Utility"
-print "Version " + version
+print("Bullshit Performance Standard Benchmarking Utility")
+print("Version " + version)
 
 start_time = time.time()
 
@@ -20,7 +20,7 @@ while count <= 50000000:
 
 final_time = time.time() - start_time
 
-print final_time
+print(final_time)
 
 f.close()
 os.remove("bs")
