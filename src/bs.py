@@ -5,6 +5,7 @@ import time
 import os
 
 count = 0
+max = 50000000
 version = "0.1-alpha"
 
 print("Bullshit Performance Standard Benchmarking Utility")
@@ -14,8 +15,10 @@ start_time = time.time()
 
 f = open("bs", "w")
 
-while count <= 50000000:
+while count <= max:
     f.write("bullshit")
+    if (count % 5000001 == 5000000):
+        print(".")
     count += 1
 
 final_time = time.time() - start_time
