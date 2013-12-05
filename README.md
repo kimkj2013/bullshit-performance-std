@@ -29,5 +29,5 @@ To get this fantastic benchmarking suite onto your machine and start testing, fo
 2. Run the BSPI
 	a. `cd bin`
 	b. `bs`
-	c. Your score will be written to the console in milliseconds of time
+	c. Your score will be written to the console in seconds of time
 3. Brag about your score on the internet!

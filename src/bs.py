@@ -5,6 +5,11 @@ import time
 import os
 
 count = 0
+version = "1.0"
+
+print "Bullshit Performance Standard Benchmarking Utility"
+print "Version " + version
+
 start_time = time.time()
 
 f = open("bs", "w")
@@ -15,7 +20,7 @@ while count <= 50000000:
 
 final_time = time.time() - start_time
 
-print int(final_time * 1000)
+print int(final_time)
 
 f.close()
 os.remove("bs")
