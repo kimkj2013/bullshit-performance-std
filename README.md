@@ -1,5 +1,6 @@
 # The Bullshit Performance Standard (BSPS)#
 #### Developed by Nate Mara and Daltin Loomis ####
+##### Honorable Mention goes to Jimmy Shaver #####
 
 ## Our Mission ##
 We realize that there are many ways for current computer users to measure their computer's performance. These include, but are not limited to:
