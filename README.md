@@ -1,5 +1,5 @@
 # The Bullshit Performance Standard (BSPS)#
-#### Original Concept by Nate Mara and Daltin Loomis ####
+#### Original Code and Concept by Nate Mara and Daltin Loomis ####
 ##### Honorable Mention goes to John Shaver #####
 
 ## Our Mission ##
