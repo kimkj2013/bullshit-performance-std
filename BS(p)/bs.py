@@ -1,3 +1,6 @@
+# The Bullshit Performance Index
+# Python Implimentation
+
 import time
 import os
 
