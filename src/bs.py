@@ -20,7 +20,7 @@ while count <= 50000000:
 
 final_time = time.time() - start_time
 
-print int(final_time)
+print final_time
 
 f.close()
 os.remove("bs")
