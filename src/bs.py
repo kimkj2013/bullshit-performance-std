@@ -14,7 +14,7 @@ print("Version " + version)
 
 start_time = time.time()
 
-f = open("bs", "w")
+f = open("bull.shit", "w")
 
 while count <= max:
     f.write("bullshit")
