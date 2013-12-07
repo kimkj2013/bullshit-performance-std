@@ -20,7 +20,7 @@ while count <= max:
     f.write("bullshit")
     if (count % 5000001 == 5000000):
         percent += 10
-        print(percent + "%")
+        print(str(percent) + "%")
     count += 1
 
 final_time = time.time() - start_time
