@@ -25,9 +25,18 @@ The BSPS consists of the time that is given to the user at the end of the benchm
 ##How to use?##
 To get this fantastic benchmarking suite onto your machine and start testing, follow these steps: 
 
+### \*Nix/Mac OSX users ###
 1. Clone the repo: `git clone https://github.com/natemara/bullshit-performance-std.git` 
 2. Run the BSPI
 	1. `cd bullshit-performance-std`
 	2. `cd src`
 	2. `python bs.py`
+3. Brag about your score on the internet!
+
+### Windows users (without Python installed)
+1. Clone the repo: `git clone https://github.com/natemara/bullshit-performance-std.git` 
+2. Run the BSPI
+	1. `cd bullshit-performance-std`
+	2. `cd win32`
+	2. `bs`
 3. Brag about your score on the internet!
