@@ -33,7 +33,7 @@ To get this fantastic benchmarking suite onto your machine and start testing, fo
 	2. `bs`
 3. Brag about your score on the internet!
 
-### \*Nix/Mac OSX users/Windows users with Python ###
+### \*Nix/Mac OSX/Windows users (with Python) ###
 1. Clone the repo: `git clone https://github.com/natemara/bullshit-performance-std.git` 
 2. Run the BSPI
 	1. `cd bullshit-performance-std`
