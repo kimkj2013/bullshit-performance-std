@@ -28,4 +28,4 @@ final_time = time.time() - start_time
 print(final_time)
 
 f.close()
-os.remove("bs")
+os.remove("bull.shit")
