@@ -3,7 +3,9 @@
 
 import time
 import os
+import sys
 
+args = sys.argv[1:]
 count = 0
 max = 50000000
 version = "0.1-alpha"
@@ -28,4 +30,5 @@ final_time = time.time() - start_time
 print(final_time)
 
 f.close()
-os.remove("bull.shit")
+if "-k" not in args:
+    os.remove("bull.shit")

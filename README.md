@@ -40,3 +40,12 @@ To get this fantastic benchmarking suite onto your machine and start testing, fo
 	2. `cd src`
 	2. `python bs.py`
 3. Brag about your score on the internet!
+
+### What if I just need a bunch of bullshit? ###
+We understand that there are circumstances in which you just need a lot of bullshit for what you're doing. The right job calls for the right tools. Say you are:
+* Working on a last minute term paper
+* Trying to come up with an excuse
+* Writing a politician's campaign speech
+* Or just in doubt that this program actually generates 50 million lines of pure bullshit
+
+_The Bullshit Performance Standard_ is perfectly equipped to meet your needs. When you are running the benchmarking utility, simply pass the command line option `-k` for "keep." This will cause the program to go through the regular sequence of benchmarking your machine, but with the added side effect of not deleting those 50 million lines of bullshit. Once the program is done, you will find a file, `bull.shit` in the same directory as the program. You are free to do with this as you wish, simply attribute the bullshit to this project.
