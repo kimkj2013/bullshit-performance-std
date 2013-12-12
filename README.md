@@ -26,11 +26,10 @@ The time that is given to the user at the end of the benchmark's execution is yo
 To get this fantastic benchmarking suite onto your machine and start testing, follow these steps: 
 
 ### Windows users (without Python installed)
-1. Clone the repo: `git clone https://github.com/natemara/bullshit-performance-std.git` 
+1. Grab the latest windows binaries from the releases tab
 2. Run the BSPI
-	1. `cd bullshit-performance-std`
-	2. `cd win32`
-	2. `bs`
+	1. `cd BSPS-win32`
+	2. `bullshit`
 3. Brag about your score on the internet!
 
 ### \*Nix/Mac OSX/Windows users (with Python) ###
@@ -38,7 +37,7 @@ To get this fantastic benchmarking suite onto your machine and start testing, fo
 2. Run the BSPI
 	1. `cd bullshit-performance-std`
 	2. `cd src`
-	2. `python bs.py`
+	3. `python bullshit.py`
 3. Brag about your score on the internet!
 
 ### What if I just need a bunch of bullshit? ###
@@ -48,4 +47,11 @@ We understand that there are circumstances in which you just need a lot of bulls
 * Writing a politician's campaign speech
 * Or just in doubt that this program actually generates 50 million lines of pure bullshit
 
-_The Bullshit Performance Standard_ is perfectly equipped to meet your needs. When you are running the benchmarking utility, simply pass the command line option `-k` for "keep." This will cause the program to go through the regular sequence of benchmarking your machine, but with the added side effect of not deleting those 50 million lines of bullshit. Once the program is done, you will find a file, `bull.shit` in the same directory as the program. You are free to do with this as you wish, simply attribute the bullshit to this project.
+_The Bullshit Performance Standard_ is perfectly equipped to meet your needs. When you are running the benchmarking utility, simply pass the command line flag `-k` for "keep." This will cause the program to go through the regular sequence of benchmarking your machine, but with the added side effect of not deleting those 50 million lines of bullshit. Once the program is done, you will find a file, `bull.shit` in the same directory as the program. You are free to do with this as you wish, simply attribute the bullshit to this project.
+
+### Command Line flags ###
+`-k` `--keep` this will prevent the program from deleting the created `bull.shit` file, so that you are free to use it for your own nefarious purposes.
+
+`-v` `--verbose` this will print all 50 million strings of bullshit directly to your console for your viewing pleasure. This is not recommended, as it will take for fucking ever. Seriously, don't do this. If you really want to look at all that bullshit, either watch the news or use the `-k` flag and view the bullshit with Vim/less/more/cat
+
+`-n` `--newline` by default, this program will write the bullshit to the file with no other characters, 100% pure, uncut bullshit. If you'd like your bullshit to look a little nicer, use this flag, and a newline character will be appended to each bullshit word, and you'll have one bullshit on each line.
