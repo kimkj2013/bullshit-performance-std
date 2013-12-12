@@ -1,5 +1,6 @@
-../win32/bullshit.exe : bullshit.py
+BSPS-win32.zip : bullshit.py
 	/cygdrive/c/python27/python.exe setup.py py2exe
 	rm -r build
-	rsync -a dist/* ../win32
-	rm -r dist
+	mv dist win32
+	zip -r BSPS-win32.zip win32
+	rm -r win32
