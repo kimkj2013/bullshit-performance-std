@@ -29,7 +29,8 @@ To get this fantastic benchmarking suite onto your machine and start testing, fo
 1. Grab the latest windows binaries from the releases tab
 2. Run the BSPI
 	1. `cd BSPS-win32`
-	2. `bullshit`
+	2. `cd win32`
+	3. `bullshit`
 3. Brag about your score on the internet!
 
 ### \*Nix/Mac OSX/Windows users (with Python) ###
