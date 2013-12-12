@@ -10,11 +10,9 @@ filename = "bull.shit"
 version = "0.3-alpha"
 max = 50000000
 
-print("Bullshit Performance Standard Benchmarking Utility")
-print("Version " + version)
-
 def main():
     setup_argparse()
+    print_banner()
 
     if args.newline:
         bullshit_string = "bullshit\n"
@@ -61,6 +59,10 @@ def one_tenth_print(file, bullshit):
     for i in range(0, loop_size):
         file.write(bullshit)
         print "bullshit"
+        
+def print_banner():
+    print("Bullshit Performance Standard Benchmarking Utility")
+    print("Version " + version)
 
 if __name__ == "__main__":
     main()
