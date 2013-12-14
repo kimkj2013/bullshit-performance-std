@@ -26,7 +26,7 @@ The time that is given to the user at the end of the benchmark's execution is yo
 To get this fantastic benchmarking suite onto your machine and start testing, follow these steps: 
 
 ### Windows users (without Python installed)
-1. Grab the latest windows binaries from the releases tab
+1. Grab a zip of the latest windows binaries from the releases tab
 2. Run the BSPI
 	1. `cd BSPS-win32`
 	2. `cd win32`
