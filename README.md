@@ -13,7 +13,7 @@ We realize that there are many ways for current computer users to measure their 
 You get the idea. We saw all of this and realized something: it's all bullshit! We thought that we should just cut the shit and get straight to the point: for all but the most intensive users, performance benchmarks are __bullshit__. So we created _The Bullshit Performance Standard_ to fit nicely in with the others.
 
 ##How Does it Work?##
-_The Bullshit Performance Standard_ uses a very advanced method of calculating performance for your machine. All current impementations of the BSPS use identical methods for their performance calculation, they simply use different languages.
+_The Bullshit Performance Standard_ uses a very advanced method of calculating performance for your machine. The method is described in detail below.
 
 1. When the program begins, a new file is created ("bull.shit")
 2. The program writes 50,000,000 copies of the string "bullshit" to this file
