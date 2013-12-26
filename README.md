@@ -34,7 +34,9 @@ To get this fantastic benchmarking suite onto your machine and start testing, fo
 3. Brag about your score on the internet!
 
 ### \*Nix/Mac OSX/Windows users (with Python) ###
-1. Clone the repo: `git clone https://github.com/natemara/bullshit-performance-std.git` 
+1. Download this repo
+	a. If you have Git installed: `git clone https://github.com/natemara/bullshit-performance-std.git` 
+	b. If you don't have Git installed, just download the latest zip from this page.
 2. Run the BSPS
 	1. `cd bullshit-performance-std`
 	2. `cd src`
