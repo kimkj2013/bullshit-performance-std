@@ -27,7 +27,7 @@ To get this fantastic benchmarking suite onto your machine and start testing, fo
 
 ### Windows users (without Python installed)
 1. Grab a zip of the latest windows binaries from the releases tab
-2. Run the BSPI
+2. Run the BSPS
 	1. `cd BSPS-win32`
 	2. `cd win32`
 	3. `bullshit`
@@ -35,7 +35,7 @@ To get this fantastic benchmarking suite onto your machine and start testing, fo
 
 ### \*Nix/Mac OSX/Windows users (with Python) ###
 1. Clone the repo: `git clone https://github.com/natemara/bullshit-performance-std.git` 
-2. Run the BSPI
+2. Run the BSPS
 	1. `cd bullshit-performance-std`
 	2. `cd src`
 	3. `python bullshit.py`
