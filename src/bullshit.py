@@ -24,8 +24,12 @@ def main():
     start_time = time.time()
 
     for i in range(0, 10):
-        if args.verbose: one_tenth_print(f, bullshit_string)
-        else: one_tenth_write(f, bullshit_string)
+        if args.verbose and not args.newline:
+            one_tenth_print(f, bullshit_string)
+        if args.verbose and args.newline:
+            one_tenth_print_newline(f, bullshit_string)
+        else:
+            one_tenth_write(f, bullshit_string)
 
         print str((i+1) * 10) + "%"
 
@@ -55,6 +59,12 @@ def one_tenth_write(file, bullshit):
         file.write(bullshit)
 
 def one_tenth_print(file, bullshit):
+    loop_size = max / 10
+    for i in range(0, loop_size):
+        file.write(bullshit)
+        print "bullshit",
+
+def one_tenth_print_newline(file, bullshit):
     loop_size = max / 10
     for i in range(0, loop_size):
         file.write(bullshit)
