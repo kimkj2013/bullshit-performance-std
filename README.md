@@ -13,7 +13,7 @@ We realize that there are many ways for current computer users to measure their 
 
 You get the idea. We saw all of this and realized something: it's all bullshit! We thought that we should just cut the shit and get straight to the point: for all but the most intensive users, performance benchmarks are __bullshit__. So we created _The Bullshit Performance Standard_ to fit nicely in with the others.
 
-## Useage ##
+## How Does it Work? ##
 _The Bullshit Performance Standard_ uses a very advanced method of quantifying your machine's performance. The method is described in detail below.
 
 1. When the program begins, a new file is created ("bull.shit")
@@ -23,7 +23,7 @@ _The Bullshit Performance Standard_ uses a very advanced method of quantifying y
 
 The time that is given to the user at the end of the benchmark's execution is your machine's BSPS score, or BSPSS.
 
-##How to use?##
+## Useage ##
 To get this ~~fantastic~~ astounding benchmarking suite onto your machine and start testing, follow these steps: 
 
 ### Windows users (without Python installed)
