@@ -54,7 +54,7 @@ To get this ~~fantastic~~ astounding benchmarking suite onto your machine and st
 ## What if I just need a 'shit ton' of bullshit? ##
 We understand that there are circumstances in which you just need a lot of bullshit for what you're doing. You always need the right tools for the job. Say you are:
 * Working on a last minute term paper
-* Trying to come up with an excuse
+* Trying to come up with an excuse as to why your last minute term paper was such shit
 * Writing a politician's campaign speech
 * Or just in doubt that this program actually generates 50 million lines of pure bullshit
 
