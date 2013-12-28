@@ -45,7 +45,7 @@ To get this ~~fantastic~~ astounding benchmarking suite onto your machine and st
 3. Brag about your score on the internet!
 
 ### Command Line flags ###
-`-k` / `--keep` this will prevent the program from deleting the created `bull.shit` file, so that you are free to use it for your own nefarious purposes.
+`-k` / `--keep` by default, upon completion, this progrm deletes the created `bull.shit` file. Enabling this option will prevent this from happening so that you are free to use the bullshit for your own nefarious purposes.
 
 `-v` / `--verbose` this will print all 50 million strings of bullshit directly to your console for your viewing pleasure. This is not recommended, as it will take for fucking ever. Seriously, don't do this. If you really want to look at all that bullshit, either watch the news or use the `-k` flag and view the bullshit with Vim/less/more/cat
 
