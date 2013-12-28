@@ -24,7 +24,7 @@ _The Bullshit Performance Standard_ uses a very advanced method of quantifying y
 The time that is given to the user at the end of the benchmark's execution is your machine's BSPS score, or BSPSS.
 
 ##How to use?##
-To get this fantastic benchmarking suite onto your machine and start testing, follow these steps: 
+To get this ~~fantastic~~ astounding benchmarking suite onto your machine and start testing, follow these steps: 
 
 ### Windows users (without Python installed)
 1. Grab a zip of the latest windows binaries from the releases tab
