@@ -45,11 +45,11 @@ To get this ~~fantastic~~ astounding benchmarking suite onto your machine and st
 3. Brag about your score on the internet!
 
 ### Command Line flags ###
-`-k` `--keep` this will prevent the program from deleting the created `bull.shit` file, so that you are free to use it for your own nefarious purposes.
+`-k` / `--keep` this will prevent the program from deleting the created `bull.shit` file, so that you are free to use it for your own nefarious purposes.
 
-`-v` `--verbose` this will print all 50 million strings of bullshit directly to your console for your viewing pleasure. This is not recommended, as it will take for fucking ever. Seriously, don't do this. If you really want to look at all that bullshit, either watch the news or use the `-k` flag and view the bullshit with Vim/less/more/cat
+`-v` / `--verbose` this will print all 50 million strings of bullshit directly to your console for your viewing pleasure. This is not recommended, as it will take for fucking ever. Seriously, don't do this. If you really want to look at all that bullshit, either watch the news or use the `-k` flag and view the bullshit with Vim/less/more/cat
 
-`-n` `--newline` by default, this program will write the bullshit to the file with no other characters, 100% pure, uncut bullshit. If you'd like your bullshit to look a little nicer, use this flag, and a newline character will be appended to each bullshit word, and you'll have one bullshit on each line.
+`-n` / `--newline` by default, this program will write the bullshit to the file with no other characters, 100% pure, uncut bullshit. If you'd like your bullshit to look a little nicer, use this flag, and a newline character will be appended to each bullshit word, and you'll have one bullshit on each line.
 
 ## What if I just need a bunch of bullshit? ##
 We understand that there are circumstances in which you just need a lot of bullshit for what you're doing. The right job calls for the right tools. Say you are:
