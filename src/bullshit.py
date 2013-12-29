@@ -38,8 +38,9 @@ def main():
         if not args.terse:
             print str((i+1) * 10) + "%"
 
-    final_time = time.time() - start_time
-    print(final_time)
+    if write_file:
+        final_time = time.time() - start_time
+        print(final_time)
 
     if write_file:
         f.close()
