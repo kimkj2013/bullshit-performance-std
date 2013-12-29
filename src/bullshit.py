@@ -30,7 +30,8 @@ def main():
         else:
             one_tenth_write(f, bullshit_string)
 
-        print str((i+1) * 10) + "%"
+        if not args.terse:
+            print str((i+1) * 10) + "%"
 
     final_time = time.time() - start_time
     print(final_time)
@@ -46,10 +47,13 @@ def setup_argparse():
 
     parse = argparse.ArgumentParser(description="Measure your computer's performance with bullshit!")
 
+    verbosity = parse.add_mutually_exclusive_group()
+
+    verbosity.add_argument("-v", "--verbose", action="store_true", help="Prints all of the bullshit to the console. Not recommended - very, very slow.")
+    verbosity.add_argument("-t", "--terse", action="store_true", help="Allow only the score to be written to the console")
+
     parse.add_argument("-k", "--keep", action="store_true", help="Keeps the \"{0}\" file for your use".format(filename))
-    parse.add_argument("-v", "--verbose", action="store_true", help="Prints all of the bullshit to the console. Not recommended - very, very slow.")
     parse.add_argument("-n", "--newline", action="store_true", help="Uses a newline character after each word")
-    parse.add_argument("-t", "--terse", action="store_true", help="Allow only the score to be written to the console")
     
     args = parse.parse_args()
     
@@ -71,8 +75,9 @@ def one_tenth_print_newline(file, bullshit):
         print "bullshit"
         
 def print_banner():
-    print("Bullshit Performance Standard Benchmarking Utility")
-    print("Version " + version)
+    if not args.terse:
+        print("Bullshit Performance Standard Benchmarking Utility")
+        print("Version " + version)
 
 if __name__ == "__main__":
     main()
