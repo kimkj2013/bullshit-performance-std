@@ -6,7 +6,7 @@ import os
 import argparse
 
 filename = "bull.shit"
-version = "0.3.7"
+version = "0.4.0"
 max = 50000000
 
 def main():
