@@ -10,6 +10,7 @@ version = "0.3.7"
 max = 50000000
 
 def main():
+    global write_file
     setup_argparse()
     if not args.verbose:
         print_banner()
@@ -19,7 +20,7 @@ def main():
     else:
         bullshit_string = "bullshit"
     
-    write_file = not args.verbose or args.keep
+    write_file = (not args.verbose) or (args.keep or args.force)
 
     if write_file: 
         f = open(filename, "w") 
@@ -28,9 +29,9 @@ def main():
 
     for i in range(0, 10):
         if args.verbose and not args.newline:
-            one_tenth_print(bullshit_string)
-        if args.verbose and args.newline:
-            one_tenth_print_newline(bullshit_string)
+            one_tenth_print(f, bullshit_string)
+        elif args.verbose and args.newline:
+            one_tenth_print_newline(f, bullshit_string)
         else:
             one_tenth_write(f, bullshit_string)
 
@@ -59,6 +60,7 @@ def setup_argparse():
 
     parse.add_argument("-k", "--keep", action="store_true", help="Keeps the \"{0}\" file for your use".format(filename))
     parse.add_argument("-n", "--newline", action="store_true", help="Uses a newline character after each word")
+    parse.add_argument("-f", "--force", action="store_true", help="Forces the program to write the \"{0}\" file. Use this with verbose flag.".format(filename))
     
     args = parse.parse_args()
     
@@ -67,18 +69,24 @@ def one_tenth_write(file, bullshit):
     for i in range(0, loop_size):
         file.write(bullshit)
 
-def one_tenth_print(bullshit):
+def one_tenth_print(file, bullshit):
+    if write_file:
+        one_tenth_write(file, bullshit)
+
     loop_size = max / 10
     for i in range(0, loop_size):
         print "bullshit",
 
-def one_tenth_print_newline(bullshit):
+def one_tenth_print_newline(file, bullshit):
+    if write_file:
+        one_tenth_write(file, bullshit)
+
     loop_size = max / 10
     for i in range(0, loop_size):
         print "bullshit"
         
 def print_banner():
-    if not args.terse:
+    if not args.terse or not args.verbose:
         print("Bullshit Performance Standard Benchmarking Utility")
         print("Version " + version)
 
