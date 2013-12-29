@@ -11,6 +11,8 @@ max = 50000000
 
 def main():
     global write_file
+    global f
+
     setup_argparse()
     if not args.verbose:
         print_banner()
@@ -29,9 +31,9 @@ def main():
 
     for i in range(0, 10):
         if args.verbose and not args.newline:
-            one_tenth_print(f, bullshit_string)
+            one_tenth_print(bullshit_string)
         elif args.verbose and args.newline:
-            one_tenth_print_newline(f, bullshit_string)
+            one_tenth_print_newline(bullshit_string)
         else:
             one_tenth_write(f, bullshit_string)
 
@@ -70,17 +72,17 @@ def one_tenth_write(file, bullshit):
     for i in range(0, loop_size):
         file.write(bullshit)
 
-def one_tenth_print(file, bullshit):
+def one_tenth_print(bullshit):
     if write_file:
-        one_tenth_write(file, bullshit)
+        one_tenth_write(f, bullshit)
 
     loop_size = max / 10
     for i in range(0, loop_size):
         print "bullshit",
 
-def one_tenth_print_newline(file, bullshit):
+def one_tenth_print_newline(bullshit):
     if write_file:
-        one_tenth_write(file, bullshit)
+        one_tenth_write(f, bullshit)
 
     loop_size = max / 10
     for i in range(0, loop_size):
