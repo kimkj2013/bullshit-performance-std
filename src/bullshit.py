@@ -3,7 +3,6 @@
 
 import time
 import os
-import sys
 import argparse
 
 filename = "bull.shit"
