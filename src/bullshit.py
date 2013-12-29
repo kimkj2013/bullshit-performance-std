@@ -6,27 +6,31 @@ import os
 import argparse
 
 filename = "bull.shit"
-version = "0.3-alpha"
+version = "0.3.7"
 max = 50000000
 
 def main():
     setup_argparse()
-    print_banner()
+    if not args.verbose:
+        print_banner()
 
     if args.newline:
         bullshit_string = "bullshit\n"
     else:
         bullshit_string = "bullshit"
     
-    f = open(filename, "w") 
+    write_file = not args.verbose or args.keep
+
+    if write_file: 
+        f = open(filename, "w") 
 
     start_time = time.time()
 
     for i in range(0, 10):
         if args.verbose and not args.newline:
-            one_tenth_print(f, bullshit_string)
+            one_tenth_print(bullshit_string)
         if args.verbose and args.newline:
-            one_tenth_print_newline(f, bullshit_string)
+            one_tenth_print_newline(bullshit_string)
         else:
             one_tenth_write(f, bullshit_string)
 
@@ -36,9 +40,10 @@ def main():
     final_time = time.time() - start_time
     print(final_time)
 
-    f.close()
+    if write_file:
+        f.close()
 
-    if not args.keep:
+    if not args.keep and write_file:
         os.remove(filename)
 
 def setup_argparse():
@@ -62,16 +67,14 @@ def one_tenth_write(file, bullshit):
     for i in range(0, loop_size):
         file.write(bullshit)
 
-def one_tenth_print(file, bullshit):
+def one_tenth_print(bullshit):
     loop_size = max / 10
     for i in range(0, loop_size):
-        file.write(bullshit)
         print "bullshit",
 
-def one_tenth_print_newline(file, bullshit):
+def one_tenth_print_newline(bullshit):
     loop_size = max / 10
     for i in range(0, loop_size):
-        file.write(bullshit)
         print "bullshit"
         
 def print_banner():
