@@ -49,6 +49,7 @@ def setup_argparse():
     parse.add_argument("-k", "--keep", action="store_true", help="Keeps the \"{0}\" file for your use".format(filename))
     parse.add_argument("-v", "--verbose", action="store_true", help="Prints all of the bullshit to the console. Not recommended - very, very slow.")
     parse.add_argument("-n", "--newline", action="store_true", help="Uses a newline character after each word")
+    parse.add_argument("-t", "--terse", action="store_true", help="Allow only the score to be written to the console")
     
     args = parse.parse_args()
     
