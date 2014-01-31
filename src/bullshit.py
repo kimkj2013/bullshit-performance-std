@@ -1,7 +1,18 @@
 #! /usr/bin/env python3
 #!/usr/bin/python
-# The Bullshit Performance Index
-# Python Implimentation
+
+"""
+The Bullshit Performance Index
+Python Implimentation
+Copyright 2014 Nathan Mara
+
+Licensed under GNU GPLv3
+http://www.gnu.org/licenses/gpl.txt
+
+All outputted bullshit licensed under
+Creative Commons Attribution-NonCommercial license
+http://creativecommons.org/licenses/by-nc/4.0/
+"""
 
 import time
 import os
