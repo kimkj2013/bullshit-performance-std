@@ -11,7 +11,7 @@ executables = [
 ]
 
 setup(name='The Bullshit Performance Standard',
-      version = '0.5.0',
+      version = '0.5.1',
       description = 'Easily benchmark your computer using bullshit!',
       options = dict(build_exe = buildOptions),
       executables = executables)
