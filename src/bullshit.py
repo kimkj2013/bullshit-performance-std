@@ -1,3 +1,4 @@
+#! python3
 #!/usr/bin/python
 # The Bullshit Performance Index
 # Python Implimentation
@@ -25,7 +26,7 @@ def main():
 
 	write_file = (not args.verbose) or (args.keep or args.force)
 
-	if write_file: 
+	if write_file:
 		f = open(filename, "w", encoding="ascii")
 
 	start_time = time.time()
