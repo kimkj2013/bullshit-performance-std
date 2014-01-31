@@ -29,8 +29,8 @@ import argparse
 
 filename = "bull.shit"
 
-version_major = 1
-version_minor = 0
+version_major = 5
+version_minor = 1
 version_patch = 0
 
 version = str(version_major) + "." + str(version_minor) + "." + str(version_patch)
