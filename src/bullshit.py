@@ -28,7 +28,13 @@ import os
 import argparse
 
 filename = "bull.shit"
-version = "0.5.1"
+
+version_major = 1
+version_minor = 0
+version_patch = 0
+
+version = str(version_major) + "." + str(version_minor) + "." + str(version_patch)
+
 license_info = """
 Copyright 2014 Nathan Mara
 This program licensed under GNU GPLv3

@@ -1,4 +1,5 @@
 from cx_Freeze import setup, Executable
+import bullshit
 
 # Dependencies are automatically detected, but it might need
 # fine tuning.
@@ -11,7 +12,7 @@ executables = [
 ]
 
 setup(name='The Bullshit Performance Standard',
-      version = '0.5.1',
+      version = bullshit.version,
       description = 'Easily benchmark your computer using bullshit!',
       options = dict(build_exe = buildOptions),
       executables = executables)
