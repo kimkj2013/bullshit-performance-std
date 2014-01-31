@@ -12,6 +12,10 @@ version = "0.4.0"
 max = 50000000
 
 def main():
+	"""
+	
+	"""
+
 	global write_file
 	global f
 
@@ -53,6 +57,10 @@ def main():
 		os.remove(filename)
 
 def setup_argparse():
+	"""
+	sets up the objects necessary for argparse to parse the command line arguments
+	"""
+
 	global parse
 	global args
 
@@ -70,11 +78,18 @@ def setup_argparse():
 	args = parse.parse_args()
 
 def one_tenth_write(file, bullshit):
+	"""
+	writes one-tenth of the specified bullshit to the file
+	"""
 	loop_size = int(max / 10)
 	for i in range(0, loop_size):
 		file.write(ascii(bullshit))
 
 def one_tenth_print(bullshit):
+	"""
+	Prints one-tenth of the specified bullshit to the screen. If the file is
+	to be written, specified by the command line arguments, then it is.
+	"""
 	if write_file:
 		one_tenth_write(f, bullshit)
 
@@ -83,6 +98,11 @@ def one_tenth_print(bullshit):
 		print("bullshit",)
 
 def one_tenth_print_newline(bullshit):
+	"""
+	Prints one-tenth of the specified bullshit to the screen with newline
+	characters. If the file is to be written, specified by the command line
+	arguments, then it is.
+	"""
 	if write_file:
 		one_tenth_write(f, bullshit)
 
@@ -91,6 +111,9 @@ def one_tenth_print_newline(bullshit):
 		print("bullshit")
 
 def print_banner():
+	"""
+	prints the banner at the beginning of the program's execution
+	"""
 	if not args.terse or not args.verbose:
 		print("Bullshit Performance Standard Benchmarking Utility")
 		print("Version " + version)
