@@ -1,13 +1,22 @@
 #! /usr/bin/env python3
-#!/usr/bin/python
 
 """
 The Bullshit Performance Index
 Python Implimentation
 Copyright 2014 Nathan Mara
 
-Licensed under GNU GPLv3
-http://www.gnu.org/licenses/gpl.txt
+This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with this program.  If not, see http://www.gnu.org/licenses/gpl.txt
 
 All outputted bullshit licensed under
 Creative Commons Attribution-NonCommercial license
@@ -20,6 +29,12 @@ import argparse
 
 filename = "bull.shit"
 version = "0.5.1"
+license_info = """
+Copyright 2014 Nathan Mara
+This program licensed under GNU GPLv3
+All outputted bullshit licensed under CC BY-NC
+"""
+
 max = 50000000
 
 def main():
@@ -128,6 +143,7 @@ def print_banner():
 	if not args.terse or not args.verbose:
 		print("Bullshit Performance Standard Benchmarking Utility")
 		print("Version " + version)
+		print(license_info)
 
 if __name__ == "__main__":
 	main()
