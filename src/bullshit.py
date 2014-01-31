@@ -22,7 +22,7 @@ def main():
 		bullshit_string = "bullshit\n"
 	else:
 		bullshit_string = "bullshit"
-	
+
 	write_file = (not args.verbose) or (args.keep or args.force)
 
 	if write_file: 
@@ -65,7 +65,7 @@ def setup_argparse():
 	parse.add_argument("-k", "--keep", action="store_true", help="Keeps the \"{0}\" file for your use".format(filename))
 	parse.add_argument("-n", "--newline", action="store_true", help="Uses a newline character after each word")
 	parse.add_argument("-f", "--force", action="store_true", help="Forces the program to write the \"{0}\" file. Use this with verbose flag.".format(filename))
-	
+
 	args = parse.parse_args()
 
 def one_tenth_write(file, bullshit):
@@ -88,7 +88,7 @@ def one_tenth_print_newline(bullshit):
 	loop_size = max / 10
 	for i in range(0, loop_size):
 		print("bullshit")
-		
+
 def print_banner():
 	if not args.terse or not args.verbose:
 		print("Bullshit Performance Standard Benchmarking Utility")
