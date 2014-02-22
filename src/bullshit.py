@@ -107,8 +107,8 @@ def setup_argparse():
 	help_terse = "Allow only the score to be written to the console"
 	help_keep = "Keeps the \"%s\" file for your use" % filename
 	help_newline = "Uses a newline character after each word"
-	help_force = "Forces the program to write the \"%s\" file."
-	help_force += " Use this with verbose flag." % filename
+	help_force = "Forces the program to write the \"%s\" file." % filename
+	help_force += " Use this with verbose flag."
 
 	parse = argparse.ArgumentParser(description=parser_description)
 
