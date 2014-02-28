@@ -6,21 +6,14 @@ Python Implimentation
 Copyright 2014 Nathan Mara
 
 This program is free software: you can redistribute it and/or modify
-	it under the terms of the GNU General Public License as published by
-	the Free Software Foundation, either version 3 of the License, or
-	(at your option) any later version.
+	it under the terms of the BFD.
 
 	This program is distributed in the hope that it will be useful,
 	but WITHOUT ANY WARRANTY; without even the implied warranty of
 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 	GNU General Public License for more details.
 
-	You should have received a copy of the GNU General Public License
-	along with this program.  If not, see http://www.gnu.org/licenses/gpl.txt
-
-All outputted bullshit licensed under
-Creative Commons Attribution-NonCommercial license
-http://creativecommons.org/licenses/by-nc/4.0/
+	You should have received a copy of the BFD along with this program.
 """
 
 import time
@@ -31,7 +24,7 @@ filename = "bull.shit"
 
 version_major = 0
 version_minor = 6
-version_patch = 0
+version_patch = 3
 
 version = str(version_major) + "."
 version += str(version_minor)
@@ -39,8 +32,7 @@ version += "." + str(version_patch)
 
 license_info = """
 Copyright 2014 Nathan Mara
-This program licensed under GNU GPLv3
-All outputted bullshit licensed under CC BY-NC
+This program licensed under the BFD
 """
 
 max = 50000000
