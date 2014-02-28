@@ -24,7 +24,7 @@ _The Bullshit Performance Standard_ uses a very advanced method of quantifying y
 The time that is given to the user at the end of the benchmark's execution is your machine's BSPS score, or BSPSS.
 
 ## Useage ##
-To get this ~~fantastic~~ astounding benchmarking suite onto your machine and start testing, follow these steps: 
+To get this ~~fantastic~~ ~~astounding~~ ~~majestic~~ ~~bullshit~~ fantastic benchmarking suite onto your machine and start testing, follow these steps: 
 
 ### Windows users (without Python installed)
 1. Grab a zip of the latest windows binaries from the releases tab
@@ -36,12 +36,12 @@ To get this ~~fantastic~~ astounding benchmarking suite onto your machine and st
 
 ### \*Nix/Mac OSX/Windows users (with Python) ###
 1. Download this repo
-1. If you have Git installed: `git clone https://github.com/natemara/bullshit-performance-std.git` 
+1. If you have Git installed: `git clone https://github.com/natemara/bullshit-performance-std.git`
 	2. If you don't have Git installed, just download the latest zip from this page and extract it to a directory of your choosing.
 2. Run the BSPS
 	1. `cd bullshit-performance-std`
 	2. `cd src`
-	3. `python bullshit.py`
+	3. `python3 bullshit.py`
 3. Brag about your score on the internet!
 
 ### Command Line flags ###
@@ -54,12 +54,3 @@ To get this ~~fantastic~~ astounding benchmarking suite onto your machine and st
 `-n` / `--newline` by default, this program will write the bullshit to the file with no other characters, 100% pure, uncut bullshit. If you'd like your bullshit to look a little nicer, use this flag, and a newline character will be appended to each bullshit word, and you'll have one bullshit on each line.
 
 `-t` / `--terse` this will restrict all output of the program to just the BSPSS, excluding the banner, the version, and the percentage. This is usefull for scripts, for example you could write just the score to a file, along with the date, so that you can accurately track your machine's bullshit generation over time. This is incompatable with the `--verbose` argument, as the options are inherently mutually exclusive.
-
-## What if I just need a 'shit ton' of bullshit? ##
-We understand that there are circumstances in which you just need a lot of bullshit for what you're doing. You've always got to have the right tools for the job. Say you are:
-* Working on a last minute term paper
-* Trying to come up with an excuse as to why your last minute term paper was such shit
-* Writing a politician's campaign speech
-* Or just in doubt that this program actually generates 50 million lines of pure bullshit
-
-_The Bullshit Performance Standard_ is perfectly equipped to meet your needs. When you are running the benchmarking utility, simply pass the command line flag `-k` for "keep." This will cause the program to go through the regular sequence of benchmarking your machine, but with the added side effect of not deleting those 50 million lines of bullshit. Once the program is done, you will find a file, `bull.shit` in the same directory as the program. You are free to do with this as you wish, simply attribute the bullshit to this project.
