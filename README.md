@@ -50,8 +50,8 @@ benchmarking suite onto your machine and start testing, follow these steps:
 1. Download this repo
 1. If you have Git installed: `git clone
    https://github.com/natemara/bullshit-performance-std`
-	2. If you don't have Git installed, just download the latest zip from this
-	   page and extract it to a directory of your choosing.
+	2. If you don't have Git installed, just download [the latest zip](https://github.com/natemara/bullshit-performance-std/zipball/master)
+	   and extract it to a directory of your choosing.
 2. Run the BSPS
 	1. `cd bullshit-performance-std`
 	2. `cd src`
