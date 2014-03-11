@@ -19,12 +19,13 @@ This program is free software: you can redistribute it and/or modify
 import time
 import os
 import argparse
+from sys import stdout
 
 filename = "bull.shit"
 
 version_major = 0
-version_minor = 6
-version_patch = 3
+version_minor = 7
+version_patch = 0
 
 version = str(version_major) + "."
 version += str(version_minor)
@@ -62,7 +63,12 @@ def main():
 
 	start_time = time.time()
 
+	progress_string = ""
+
 	for i in range(0, 10):
+		if not args.terse:
+			stdout.write("\r%s" % get_percent_string(i))
+			stdout.flush()
 		if args.verbose and not args.newline:
 			one_tenth_print(bullshit_string)
 		elif args.verbose and args.newline:
@@ -70,8 +76,9 @@ def main():
 		else:
 			one_tenth_write(f, bullshit_string)
 
-		if not args.terse:
-			print(str((i + 1) * 10) + "%")
+	if not args.terse:
+		stdout.write("\r%s\n" % get_percent_string(10))
+		print()
 
 	if write_file:
 		final_time = time.time() - start_time
@@ -82,6 +89,14 @@ def main():
 
 	if not args.keep and write_file:
 		os.remove(filename)
+
+
+def get_percent_string(current_iteration):
+	percent_string = "#" * current_iteration * 2
+	percent_string += " " * (20 - current_iteration * 2)
+	percent_string = "[" + percent_string + "]"
+	percent_string += str(current_iteration * 10) + "%"
+	return percent_string
 
 
 def setup_argparse():
