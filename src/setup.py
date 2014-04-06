@@ -1,9 +1,10 @@
+#!/usr/bin/env python3
 from cx_Freeze import setup, Executable
 import bullshit
 
 # Dependencies are automatically detected, but it might need
 # fine tuning.
-buildOptions = dict(packages = ["os", "argparse", "time"], excludes = [])
+buildOptions = dict(packages = ['os', 'argparse', 'time', 'sys'], excludes = [])
 
 base = 'Console'
 
